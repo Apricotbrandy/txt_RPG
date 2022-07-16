@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG_Game</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="common.js"></script>
+    <script src="monster.js"></script>
+    <script src="character.js"></script>
+    <script src="Room.js"></script>
+    <script src="function.js"></script>
+    <script src="RPG_v0.17.0.js"></script>
+    <!-- <script src="main.js"></script> -->
+    
+</head>
+<body>
+    <form>
+        <textarea id="screen_player_info" readonly="readonly"></textarea>
+        <textarea id="screen_game_object" readonly="readonly"></textarea><br>
+        <textarea id="screen_message_box" readonly="readonly"></textarea><br>
+        <br>
+        <input id="input_txt_turn" value="1" readonly="readonly">
+        <input type="reset" value="REPLAY">
+
+    </form>
+    <input type="button" value="턴 진행" onclick="turn()">
+    <input type="button" value="동쪽으로" onclick="east()">
+    <input type="button" value="서쪽으로" onclick="west()">
+    <input type="button" value="남쪽으로" onclick="south()">
+    <input type="button" value="북쪽으로" onclick="north()">
+</body>
+</html>
